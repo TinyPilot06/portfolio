@@ -1,0 +1,25 @@
+@import '../styles/variables.scss';
+@import '../styles/globals.scss';
+
+.intro-container {
+	margin: 180px 0 200px 70px;
+
+	.title {
+		font-size: 20px;
+		font-family: 'Zen Maru Gothic';
+	}
+
+	.intro {
+		font-size: 100px;
+		font-family: 'Bebas Neue';
+	}
+
+	.btn {
+		width: 130px;
+		height: 50px;
+		margin-top: 12px;
+		border: 1px solid white;
+		border-radius: 32px;
+		font-size: 20px;
+	}
+}

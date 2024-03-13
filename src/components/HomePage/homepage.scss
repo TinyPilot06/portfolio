@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.homepage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100vh;
+
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 105px;
+		padding-right: 18px;
+		border-bottom: 1px solid rgba(white, 0.5);
+		background-color: rgba(46, 118, 138, 0.5);
+		backdrop-filter: blur(10px);
+		z-index: 1000;
+
+		svg path {
+			fill: white !important;
+		}
+
+		.header-text {
+			padding: 12px;
+			font-family: "Zen Maru Gothic", sans-serif;
+			font-size: 20px;
+		}
+	}
+
+	.main-content {
+		// grid-area: body;
+		height: 100%;
+		padding-top: 82px;
+		display: grid;
+		grid-template-columns: 65% 35%;
+		grid-template-rows: 1fr;
+		grid-template-areas: "content negative";
+		overflow-y: auto;
+
+		.components {
+			margin-top: 75px;
+		}
+	}
+}
