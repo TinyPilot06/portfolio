@@ -1,5 +1,24 @@
 @import '../styles/variables.scss';
 
-.btn {
-	font-family: 'Bebas Neue';
+
+.content-container {
+	margin: 150px 30px 300px 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.content-container {
+		margin-left: 35px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.content-container {
+		margin-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.content-container {
+		margin-left: 20px;
+	}
 }

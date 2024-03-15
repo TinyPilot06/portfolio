@@ -1,12 +1,13 @@
-import { Box, ButtonBase, Grid, Stack } from "@mui/material"
+import { Grid, Stack } from "@mui/material"
 import './homepage.scss';
 import MPLogo from "../mp-logo";
+import Greeting from "../greeting"
 import AboutMe from "../aboutme";
 import Projects from "../projects/projects";
 import ContactForm from "../ContactForm";
-// import Contact from "../contact";
 import Footer from "../footer/footer";
 import { forwardRef } from "react";
+import Experience from "../experience";
 
 type Props = {
 };
@@ -14,21 +15,23 @@ type Props = {
 const HomePage = forwardRef<HTMLDivElement, Props>((props, ref) => {
 	return (
 		<div className="homepage">
-			<Grid className="header" position="static" height="100%">
-				<Stack direction="row">
-					<Box sx={{ flex: '1 1 auto', m: '0 200px 0 70px', pt: '21px' }}>
+			<Grid container className="header" position="static">
+				<Grid item width="100%">
+					<Stack direction="row" sx={{ flex: '1 1 auto', pt: '21px', justifyContent: 'center' }}>
 						<MPLogo />
-					</Box>
-					<Stack direction="row">
+					</Stack>
+					{/* <Stack direction="row">
 						<ButtonBase sx={{ height: '100%' }} onClick={() => console.log('About')} className="header-text">ABOUT</ButtonBase>
 						<ButtonBase sx={{ height: '100%' }} onClick={() => console.log('Projects')} className="header-text">PROJECTS</ButtonBase>
 						<ButtonBase sx={{ height: '100%' }} onClick={() => console.log('Contact')} className="header-text">CONTACT</ButtonBase>
-					</Stack>
-				</Stack>
+					</Stack> */}
+				</Grid>
 			</Grid>
 			<Grid className="main-content" ref={ref}>
 				<Grid className="components">
+					<Greeting />
 					<AboutMe />
+					<Experience />
 					<Projects />
 					<ContactForm />
 					<Footer />

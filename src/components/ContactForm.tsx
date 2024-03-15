@@ -1,4 +1,4 @@
-import { Button, Stack, TextField, Typography } from "@mui/material"
+import { Box, Button, Stack, TextField, Typography } from "@mui/material"
 import { useState } from "react"
 import '../components/contactform.scss';
 
@@ -22,9 +22,9 @@ const ContactForm = () => {
 	};
 
 	return (
-		<Stack sx={{ m: '90px 0 100px 70px' }}>
-			<Typography variant="h2">CONTACT</Typography>
-			<Stack className="contact-form" spacing={2.5} sx={{ m: '50px 0 50px 0' }}>
+		<Stack className="content-container" spacing={2} >
+			<Typography variant="h4">CONTACT</Typography>
+			<Stack className="contact-form" spacing={4}>
 				<TextField className="input-label" variant="standard" size="medium"
 					required
 					id="name"
@@ -41,7 +41,7 @@ const ContactForm = () => {
 					value={formFields.email}
 					onChange={handleChange}
 				/>
-				<TextField className="input-label" variant="outlined"
+				<TextField className="input-label" variant="standard"
 					required
 					id="message"
 					name="message"
@@ -49,9 +49,12 @@ const ContactForm = () => {
 					value={formFields.message}
 					onChange={handleChange}
 				/>
-				<Button className="submit-btn" variant="outlined" type="submit" sx={{ mt: 12, border: '1px solid white', borderRadius: 32, fontSize: 20 }}>SUBMIT</Button>
+				<Box>
+					<Button size="large" variant="outlined" type="submit" sx={{ px: '25px' }}>SUBMIT</Button>
+				</Box>
 			</Stack>
 		</Stack>
+
 	)
 
 };

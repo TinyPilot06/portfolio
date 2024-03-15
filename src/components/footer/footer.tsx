@@ -1,37 +1,29 @@
-import { Button, ButtonBase, ListItemButton, ListItemIcon, Stack } from "@mui/material"
+import { Box, Button, ButtonBase, IconButton, ListItemButton, ListItemIcon, Stack } from "@mui/material"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './footer.scss';
 
-
-
 const Footer = () => {
 	return (
-		<Stack className="footer-box" direction="row">
-			<Stack direction="row" className="footer-nav">
-				<Button>HOME</Button>
-				<Button>ABOUT ME</Button>
-				<Button>PROJECTs</Button>
-				<Button>CONTACT</Button>
-			</Stack>
-			<Stack direction="row" className="footer-social">
-				<ListItemButton>
-					<ListItemIcon>
+		<Stack className="content-container" direction="row" sx={{ mt: 45, mb: '20px !important' }}>
+			<Box>
+				<Button variant="text" size="medium">HOME</Button>
+				<Button variant="text" size="medium">ABOUT ME</Button>
+				<Button variant="text" size="medium">PROJECTs</Button>
+				<Button variant="text" size="medium">CONTACT</Button>
+				<Stack direction="row" spacing={2}>
+					<IconButton>
+						<FontAwesomeIcon icon={{ prefix: 'fab', iconName: 'linkedin' }} />
+					</IconButton>
+					<IconButton>
 						<FontAwesomeIcon icon="trash-can" />
-					</ListItemIcon>
-				</ListItemButton>
-				<ListItemButton>
-					<ListItemIcon>
+					</IconButton>
+					<IconButton>
 						<FontAwesomeIcon icon="trash-can" />
-					</ListItemIcon>
-				</ListItemButton>
-				<ListItemButton>
-					<ListItemIcon>
-						<FontAwesomeIcon icon="trash-can" />
-					</ListItemIcon>
-				</ListItemButton>
-
-			</Stack>
-		</Stack >
+					</IconButton>
+				</Stack>
+			</Box>
+		</Stack>
 	)
 };
+
 export default Footer;
