@@ -1,0 +1,68 @@
+.resume-main {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: grid;
+	grid-template-columns: 375px auto;
+	grid-template-rows: 220px auto;
+	grid-template-areas:
+		'contact  header'
+		'contact main-content';
+	background-color: transparent; // #203e48;
+	overflow-y: auto;
+
+	@media only screen and (max-width: 1200px) {
+		.resume-main {
+			grid-template-columns: 65% 35%;
+		}
+	}
+
+	@media only screen and (max-width: 900px) {
+		.resume-main {
+			grid-template-columns: 75% 25%;
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.resume-main {
+			grid-template-columns: 100% 0;
+		}
+	}
+
+	.header {
+		grid-area: header;
+		background-color: #225969;
+		margin-top: 45px;
+	}
+
+	.contact-info {
+		background-color: #225969;
+		margin-top: 90px;
+		padding: 20px;
+		justify-content: center;
+		text-align: center;
+		// border: 1px solid #d43f1d;
+		border-radius: 10%;
+		border: 1px solid rgba(white, 0.5);
+		// box-shadow: 5px 6px #d43f1d;
+
+	}
+
+	.main-content {
+		grid-area: main-content;
+		margin-top: 160px;
+		margin-left: 80px;
+	}
+
+	.resume-item-title {
+		margin: 18px;
+		font-size: 21px;
+	}
+
+	.resume-text {
+		margin: 18px;
+		backdrop-filter: blur(10px);
+	}
+}

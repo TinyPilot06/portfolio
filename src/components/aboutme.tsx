@@ -1,7 +1,7 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import './aboutme.scss';
 import '../styles/globals.scss';
-import resumePdf from './Resume.pdf';
+// import resumePdf from './Resume.pdf';
 
 const AboutMe = () => {
 	return (
@@ -24,10 +24,6 @@ const AboutMe = () => {
 				to challenge the status quo, and to contribute to a future where technology continues to enhance our capabilities,
 				streamline our work, and enrich our lives. Through my passion for software engineering, I strive to be not just a
 				participant in this dynamic landscape but a creator of impactful, enduring solutions.
-				{/* Hello and welcome to my about me page! I'm a software engineer with a passion for building
-					efficient and user-friendly applications.
-					I have always been fascinated by technology and its ability to transform the way we live and
-					work. */}
 			</Typography>
 		</Stack>
 	)

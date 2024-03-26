@@ -14,20 +14,8 @@ type Props = {
 
 const HomePage = forwardRef<HTMLDivElement, Props>((props, ref) => {
 	return (
-		<div className="homepage">
-			<Grid container className="header" position="static">
-				<Grid item width="100%">
-					<Stack direction="row" sx={{ flex: '1 1 auto', pt: '21px', justifyContent: 'center' }}>
-						<MPLogo />
-					</Stack>
-					{/* <Stack direction="row">
-						<ButtonBase sx={{ height: '100%' }} onClick={() => console.log('About')} className="header-text">ABOUT</ButtonBase>
-						<ButtonBase sx={{ height: '100%' }} onClick={() => console.log('Projects')} className="header-text">PROJECTS</ButtonBase>
-						<ButtonBase sx={{ height: '100%' }} onClick={() => console.log('Contact')} className="header-text">CONTACT</ButtonBase>
-					</Stack> */}
-				</Grid>
-			</Grid>
-			<Grid className="main-content" ref={ref}>
+		<div className="homepage" ref={ref}>
+			<Grid className="main-content">
 				<Grid className="components">
 					<Greeting />
 					<AboutMe />

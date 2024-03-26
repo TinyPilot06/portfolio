@@ -23,7 +23,7 @@ const DarkTheme = createTheme({
 			fontSize: 24
 		},
 		body1: {
-			fontSize: 26
+			fontSize: 18
 		}
 	},
 	components: {

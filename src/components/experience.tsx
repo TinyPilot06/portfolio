@@ -5,11 +5,13 @@ const Experience = () => {
 		<Stack className="content-container">
 			<Typography className="experience" variant="h4">EXPERIENCE</Typography>
 			<Typography className="text-box" variant="body1">
-				I have completed the certification process of Web Fundamentals, Back End and Full Stack
-				Development courses.
-				It includes some languages such as JavaScript, SQL, Python, HTML and CSS. I am also familiar
-				with some 3Js by learning in my own.
-				My website is built from scratch in each every last details.
+				Participated in numerous projects, covering website and web app design & development, database development,
+				Python scripting, DevOps in both the AWS and Azure environments, mobile app development,
+				and full-stack design and architecture principles.
+				<br />
+				<br />
+				I built my website using React and Typescript complemented by Material UI version5 for maintainability, responsiveness and accessibility accross various
+				devices. I also incorporated 3Js element as a background to bring immersive and interactive dimension to my site.
 				<br />
 				Give me a try and let’s build something great together.
 			</Typography>

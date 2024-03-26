@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+.scroll-area {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 105px;
+		border-bottom: 1px solid rgba(white, 0.5);
+		background-color: rgba(46, 118, 138, 0.5);
+		backdrop-filter: blur(10px);
+		z-index: 1000;
+
+		svg path {
+			fill: white !important;
+		}
+
+		.header-text {
+			padding: 12px;
+			font-family: "Zen Maru Gothic", sans-serif;
+			font-size: 20px;
+		}
+	}
+}

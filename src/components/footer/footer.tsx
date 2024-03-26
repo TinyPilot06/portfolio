@@ -1,6 +1,7 @@
-import { Box, Button, ButtonBase, IconButton, ListItemButton, ListItemIcon, Stack } from "@mui/material"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Box, Button, Stack } from "@mui/material"
 import './footer.scss';
+import SocialIcon from "../socialIcon";
+
 
 const Footer = () => {
 	return (
@@ -11,15 +12,8 @@ const Footer = () => {
 				<Button variant="text" size="medium">PROJECTs</Button>
 				<Button variant="text" size="medium">CONTACT</Button>
 				<Stack direction="row" spacing={2}>
-					<IconButton>
-						<FontAwesomeIcon icon={{ prefix: 'fab', iconName: 'linkedin' }} />
-					</IconButton>
-					<IconButton>
-						<FontAwesomeIcon icon="trash-can" />
-					</IconButton>
-					<IconButton>
-						<FontAwesomeIcon icon="trash-can" />
-					</IconButton>
+					<SocialIcon url="https://www.linkedin.com/in/michelle-polan/" icon={{ prefix: 'fab', iconName: 'linkedin' }} />
+					<SocialIcon url="https://github.com/TinyPilot06" icon={{ prefix: 'fab', iconName: 'github' }} />
 				</Stack>
 			</Box>
 		</Stack>

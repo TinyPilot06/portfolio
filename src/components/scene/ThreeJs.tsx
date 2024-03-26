@@ -1,14 +1,14 @@
-import React, { useRef, useEffect, FC, RefObject } from 'react';
+import { useRef, useEffect, FC, RefObject } from 'react';
 import * as THREE from 'three';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 
 type Props = {
-	homepage: RefObject<HTMLDivElement>;
+	scrollRef: RefObject<HTMLDivElement>;
 };
 
-const ThreeJs: FC<Props> = ({ homepage }) => {
+const ThreeJs: FC<Props> = ({ scrollRef }) => {
 	const mountRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
@@ -26,7 +26,7 @@ const ThreeJs: FC<Props> = ({ homepage }) => {
 
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
 		renderer.setClearColor("#0f3f4b");
-		console.log(`${window.innerWidth}px x ${window.innerHeight}px`);
+		// console.log(`${window.innerWidth}px x ${window.innerHeight}px`);
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		renderer.shadowMap.enabled = true;
 		renderer.shadowMap.type = THREE.PCFSoftShadowMap;
@@ -229,7 +229,7 @@ const ThreeJs: FC<Props> = ({ homepage }) => {
 
 		render();
 
-		const element = homepage.current;
+		const element = scrollRef.current;
 
 		if (element) {
 			const articleHeight = element.getBoundingClientRect().height;
