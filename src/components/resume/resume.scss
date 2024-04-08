@@ -13,29 +13,23 @@
 	background-color: transparent; // #203e48;
 	overflow-y: auto;
 
-	@media only screen and (max-width: 1200px) {
-		.resume-main {
-			grid-template-columns: 65% 35%;
-		}
-	}
+	// @media only screen and (max-width: 1200px) {
+	// 	.resume-main {
+	// 		grid-template-columns: 65% 35%;
+	// 	}
+	// }
 
-	@media only screen and (max-width: 900px) {
-		.resume-main {
-			grid-template-columns: 75% 25%;
-		}
-	}
+	// @media only screen and (max-width: 900px) {
+	// 	.resume-main {
+	// 		grid-template-columns: 75% 25%;
+	// 	}
+	// }
 
-	@media only screen and (max-width: 600px) {
-		.resume-main {
-			grid-template-columns: 100% 0;
-		}
-	}
-
-	.header {
-		grid-area: header;
-		background-color: #225969;
-		margin-top: 45px;
-	}
+	// @media only screen and (max-width: 600px) {
+	// 	.resume-main {
+	// 		grid-template-columns: 100% 0;
+	// 	}
+	// }
 
 	.contact-info {
 		background-color: #225969;
@@ -43,16 +37,13 @@
 		padding: 20px;
 		justify-content: center;
 		text-align: center;
-		// border: 1px solid #d43f1d;
-		border-radius: 10%;
+		border-radius: 16px;
 		border: 1px solid rgba(white, 0.5);
-		// box-shadow: 5px 6px #d43f1d;
 
 	}
 
 	.main-content {
 		grid-area: main-content;
-		margin-top: 160px;
 		margin-left: 80px;
 	}
 
@@ -63,6 +54,9 @@
 
 	.resume-text {
 		margin: 18px;
+		padding: 16px;
+		background-color: rgba(255, 255, 255, 0.1);
 		backdrop-filter: blur(10px);
+		border-radius: 10px;
 	}
 }
