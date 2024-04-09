@@ -34,6 +34,9 @@ const ContactForm = () => {
 					console.log(result.text);
 					setSubmitSuccessful(true);
 
+					// Clear the form after successful submit.	
+					setFormFields({ name: '', email: '', message: '' })
+
 				}, (error) => {
 					console.log(error.text);
 					setSubmitSuccessful(false);

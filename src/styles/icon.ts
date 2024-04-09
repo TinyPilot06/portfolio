@@ -10,7 +10,8 @@ import {
 	faFilePdf,
 	faPhone,
 	faDownload,
-	faGlobe
+	faGlobe,
+	faCaretRight
 } from "@fortawesome/free-solid-svg-icons";
 
 const setupIcons = () => {
@@ -23,7 +24,8 @@ const setupIcons = () => {
 		faFilePdf,
 		faPhone,
 		faDownload,
-		faGlobe
+		faGlobe,
+		faCaretRight
 	);
 };
 

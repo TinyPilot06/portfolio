@@ -1,6 +1,5 @@
-import { Grid, Stack } from "@mui/material"
+import { Grid } from "@mui/material"
 import './homepage.scss';
-import MPLogo from "../mp-logo";
 import Greeting from "../greeting"
 import AboutMe from "../aboutme";
 import Projects from "../projects/projects";

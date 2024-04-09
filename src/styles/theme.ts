@@ -8,6 +8,10 @@ const DarkTheme = createTheme({
 			main: '#ffffff',
 			contrastText: '#000000'
 		},
+		secondary: {
+			main: '#6edeff',
+			contrastText: '#ffffff'
+		}
 	},
 	typography: {
 		fontFamily: '"Zen Maru Gothic", sans-serif',
@@ -34,6 +38,23 @@ const DarkTheme = createTheme({
 				},
 				sizeLarge: {
 					fontSize: 24
+				}
+			}
+		},
+		MuiPaper: {
+			styleOverrides: {
+				elevation0: {
+					borderTop: '1px solid white',
+					borderRadius: 10,
+					backgroundColor: 'rgba(57, 156, 183, 0.3)',
+					backdropFilter: 'blur(14px) saturate(120%) brightness(70%)'
+				}
+			}
+		},
+		MuiListItemIcon: {
+			styleOverrides: {
+				root: {
+					minWidth: 32
 				}
 			}
 		}
