@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Welcome to MichellePolan.com!
+
+This is my personal portfolio site! This site was written primarily using React with TypeScript, but I threw some ThreeJS in there for good measure. The primary UI is built using Material UI v5, which I tried to utilize natively rather than relying too heavily on Sass or pure CSS, though there is a little bit of Sass in there for some minor elements.
+
+I am \#OpenToWork! Please contact me directly at gemini6878 at the Gmails, or fill out the form on my [site's homepage](http://michellepolan.com). I'd love to be part of your team so we can make great things together!
+
+# Getting Started with Michelle's Portfolio site (michellepolan.com)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

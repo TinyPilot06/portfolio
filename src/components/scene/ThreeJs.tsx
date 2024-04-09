@@ -168,7 +168,7 @@ const ThreeJs: FC<Props> = ({ scrollRef }) => {
 		sm_floor.receiveShadow = true;
 		scene.add(sm_floor);
 
-		sm_wall.position.set(0, 2, -15.85);
+		sm_wall.position.set(0, 2, -45.85);
 		sm_wall.rotation.set(1.8 * Math.PI, 0, 0);
 		sm_wall.receiveShadow = false;
 		scene.add(sm_wall);
