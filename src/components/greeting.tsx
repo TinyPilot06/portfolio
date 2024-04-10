@@ -1,7 +1,7 @@
 import { Button, IconButton, Stack, Tooltip, Typography, Zoom } from "@mui/material";
 import resumePdf from './Resume.pdf';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useNavigate, useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Greeting = () => {
 	const navigate = useNavigate();
@@ -23,7 +23,7 @@ const Greeting = () => {
 					sx={{ display: 'inline-block', height: 54, px: '25px' }}
 					onClick={handleViewResumeClick}
 				>
-					VIEW RESUME
+					PROFESSIONAL EXPERIENCE
 				</Button>
 				<Tooltip TransitionComponent={Zoom} title={<Typography variant="subtitle2">Download my resume as a PDF!</Typography>}>
 					<IconButton

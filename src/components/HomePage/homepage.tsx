@@ -21,7 +21,7 @@ const HomePage = forwardRef<HTMLDivElement, Props>((props, ref) => {
 					<Experience />
 					<Projects />
 					<ContactForm />
-					<Footer />
+					{/* <Footer /> */}
 				</Grid>
 				<Grid className="negative">
 				</Grid>

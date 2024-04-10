@@ -11,10 +11,6 @@ const Footer = () => {
 				<Button variant="text" size="medium">ABOUT ME</Button>
 				<Button variant="text" size="medium">PROJECTs</Button>
 				<Button variant="text" size="medium">CONTACT</Button>
-				<Stack direction="row" spacing={2}>
-					<SocialIcon url="https://www.linkedin.com/in/michelle-polan/" icon={{ prefix: 'fab', iconName: 'linkedin' }} />
-					<SocialIcon url="https://github.com/TinyPilot06" icon={{ prefix: 'fab', iconName: 'github' }} />
-				</Stack>
 			</Box>
 		</Stack>
 	)

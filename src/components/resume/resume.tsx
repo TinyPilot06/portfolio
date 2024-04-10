@@ -11,7 +11,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 	const theme = useTheme();
 
 	return (
-		<Stack direction='row' className="resume-main" ref={ref} spacing={2} p={4} pt={16}>
+		<Stack direction='row' className="resume-main" ref={ref} spacing={2} mb={4} p={4} pt={16}>
 			<Stack className='contact' sx={{ mt: '140px', ml: '70px' }}>
 				<Stack sx={{ m: '26px' }}>
 					<CardMedia
@@ -154,7 +154,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 									<Typography fontWeight="bold">
 										Blackjack Dealer / Pit Supervisor <br />
 									</Typography>
-									<Typography color={theme.palette.secondary.main}>
+									<Typography color={theme.palette.info.main}>
 										May 2012 - Present
 									</Typography>
 								</Stack>
@@ -162,7 +162,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 									<Typography fontWeight="bold">
 										Seminole HardRock Hotel and Casino
 									</Typography>
-									<Typography textAlign="right" color={theme.palette.secondary.main}>
+									<Typography textAlign="right" color={theme.palette.info.main}>
 										5223 Orient Road, Tampa, FL  33610
 									</Typography>
 								</Stack>
@@ -195,7 +195,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 									<Typography fontWeight="bold">
 										Office Manager
 									</Typography>
-									<Typography textAlign="right" color={theme.palette.secondary.main}>
+									<Typography textAlign="right" color={theme.palette.info.main}>
 										October 2011 - May 2012
 									</Typography>
 								</Stack>
@@ -203,7 +203,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 									<Typography fontWeight="bold">
 										TM Realty, LLC.
 									</Typography>
-									<Typography textAlign="right" color={theme.palette.secondary.main}>
+									<Typography textAlign="right" color={theme.palette.info.main}>
 										3275 Arbor Pointe Cir, Tampa, FL  33617
 									</Typography>
 								</Stack>
@@ -233,7 +233,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 										<Typography fontWeight="bold">
 											Waitress
 										</Typography>
-										<Typography textAlign="right" color={theme.palette.secondary.main}>
+										<Typography textAlign="right" color={theme.palette.info.main}>
 											June 2001 - December 2011
 										</Typography>
 									</Stack>
@@ -241,7 +241,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 										<Typography fontWeight="bold">
 											The Cheesecake Factory Restaurants
 										</Typography>
-										<Typography textAlign="right" color={theme.palette.secondary.main}>
+										<Typography textAlign="right" color={theme.palette.info.main}>
 											2223 N Westshore Blvd., Tampa, FL  33607
 										</Typography>
 									</Stack>
@@ -264,11 +264,26 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 				<Stack spacing={3}>
 					<Typography variant="h5">SOFT SKILLS</Typography>
 					<Paper elevation={0}>
-						<Typography m="10px" p="20px">
-							Demonstrably strong work ethic and company loyalty. <br />
-							Excellent communication and interpersonal skills honed in high-pressure service environments. <br />
-							Adaptability and eagerness to learn and apply new technologies.
-						</Typography>
+						<List>
+							<ListItem>
+								<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+								<ListItemText>
+									Demonstrably strong work ethic and company loyalty.
+								</ListItemText>
+							</ListItem>
+							<ListItem>
+								<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+								<ListItemText>
+									Excellent communication and interpersonal skills honed in high-pressure service environments.
+								</ListItemText>
+							</ListItem>
+							<ListItem>
+								<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+								<ListItemText>
+									Adaptability and eagerness to learn and apply new technologies.
+								</ListItemText>
+							</ListItem>
+						</List>
 					</Paper>
 				</Stack>
 				<Divider variant='middle' />
@@ -280,7 +295,6 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 							<br />
 							When I’m not coding, I like to build with Lego, play video games, root for the Ravens, and go to the gym.
 						</Typography>
-
 					</Paper>
 				</Stack>
 			</Stack>

@@ -52,10 +52,10 @@ const ContactForm = () => {
 
 	return (
 		<form ref={myForm} onSubmit={sendEmail} noValidate>
-			<Stack className="content-container" spacing={2} >
+			<Stack className="content-container" spacing={2} style={{ marginBottom: 150 }} >
 				<Typography variant="h4">CONTACT</Typography>
-				<Stack className="contact-form" spacing={4}>
-					<TextField className="input-label" variant="standard" size="medium"
+				<Stack spacing={4}>
+					<TextField variant="standard"
 						required
 						id="name"
 						name="name"
@@ -63,7 +63,7 @@ const ContactForm = () => {
 						value={formFields.name}
 						onChange={handleChange}
 					/>
-					<TextField className="input-label" variant="standard" size="medium"
+					<TextField variant="standard"
 						required
 						id="email"
 						name="email"
@@ -71,7 +71,7 @@ const ContactForm = () => {
 						value={formFields.email}
 						onChange={handleChange}
 					/>
-					<TextField className="input-label" variant="standard"
+					<TextField variant="standard"
 						required
 						id="message"
 						name="message"

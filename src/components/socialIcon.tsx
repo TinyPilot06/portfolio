@@ -9,7 +9,7 @@ interface SocialIconProps {
 
 const SocialIcon: React.FC<SocialIconProps> = ({ url, icon }) => {
 	return (
-		<IconButton onClick={() => window.open(url, '_blank')}>
+		<IconButton sx={{ width: 42, height: 42 }} onClick={() => window.open(url, '_blank')}>
 			<FontAwesomeIcon icon={icon} />
 		</IconButton>
 	)
