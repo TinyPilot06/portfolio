@@ -13,7 +13,6 @@ type Props = {
 };
 
 const SceneBackground: FC<Props> = ({ scrollRef }) => {
-	const theme = useTheme();
 
 	return (
 		<>

@@ -1,4 +1,4 @@
-import { CardMedia, Divider, Grid, Link, List, ListItem, ListItemIcon, ListItemText, Paper, Stack, Typography, useTheme } from '@mui/material'
+import { CardMedia, Divider, Link, List, ListItem, ListItemIcon, ListItemText, Paper, Stack, Typography, useTheme } from '@mui/material'
 import profilePic from '../../assets/profilePic.jpg';
 import './resume.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

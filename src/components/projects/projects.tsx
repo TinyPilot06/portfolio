@@ -1,4 +1,4 @@
-import { CardContent, CardMedia, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { CardContent, CardMedia, Stack, Typography, useTheme } from "@mui/material";
 import Card from '@mui/material/Card';
 import loginPage from '../../assets/log-inPage.jpg';
 import portfolio from '../../assets/Portfolio.jpg';
@@ -7,7 +7,6 @@ import SocialIcon from "../socialIcon";
 
 
 const Projects = () => {
-	const theme = useTheme();
 
 	return (
 		<Stack spacing={5} className="content-container">

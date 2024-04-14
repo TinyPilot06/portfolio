@@ -4,7 +4,6 @@ import Greeting from "../greeting"
 import AboutMe from "../aboutme";
 import Projects from "../projects/projects";
 import ContactForm from "../ContactForm";
-import Footer from "../footer/footer";
 import { forwardRef } from "react";
 import Experience from "../experience";
 
