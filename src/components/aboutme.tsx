@@ -7,7 +7,7 @@ const AboutMe = () => {
 		<Stack className="content-container">
 			<Typography variant="h4">ABOUT ME</Typography>
 			<Typography variant="body1">
-				I am blackjack dealer and I love what I do but I decided to finally take the steps towards my ultimate goal is to be a software engineer.
+				I am blackjack dealer and I love what I do, but I decided to finally take the steps towards my ultimate goal is to be a software engineer.
 				I have always love computers and technology. I am fascinated by the rapid evolution of technology and its impact on both our professional and personal lives. <br />
 				<br />
 				I am passionate about creating efficient and user-friendly applications. In all code and every interface I design, I aim to bridge the gap between technical
