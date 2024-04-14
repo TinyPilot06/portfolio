@@ -10,13 +10,13 @@ const Experience = () => {
 				and full-stack design and architecture principles.
 				<br />
 				<br />
-				I built my website using React and Typescript complemented by Material UI version5 for maintainability, responsiveness and accessibility accross various
+				I built my website using React and Typescript complemented by Material UI for maintainability, responsiveness and accessibility accross various
 				devices. I also incorporated 3Js element as a background to bring immersive and interactive dimension to my site.
 				<br />
-				Give me a try and let’s build something great together.
+				<br />
+				Let’s build something great together!
 			</Typography>
 		</Stack>
-
 	)
 }
 export default Experience;

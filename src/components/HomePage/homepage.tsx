@@ -14,8 +14,8 @@ type Props = {
 const HomePage = forwardRef<HTMLDivElement, Props>((props, ref) => {
 	return (
 		<div className="homepage" ref={ref}>
-			<Grid className="main-content">
-				<Grid className="components">
+			<Grid container>
+				<Grid className="components" xs={12} sm={6} m={8} lg={6} xl={6}>
 					<Greeting />
 					<AboutMe />
 					<Experience />

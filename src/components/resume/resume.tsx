@@ -159,7 +159,7 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 									</Typography>
 								</Stack>
 								<Stack>
-									<Typography fontWeight="bold">
+									<Typography textAlign="right" fontWeight="bold">
 										Seminole HardRock Hotel and Casino
 									</Typography>
 									<Typography textAlign="right" color={theme.palette.info.main}>
@@ -195,12 +195,12 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 									<Typography fontWeight="bold">
 										Office Manager
 									</Typography>
-									<Typography textAlign="right" color={theme.palette.info.main}>
+									<Typography color={theme.palette.info.main}>
 										October 2011 - May 2012
 									</Typography>
 								</Stack>
 								<Stack>
-									<Typography fontWeight="bold">
+									<Typography textAlign="right" fontWeight="bold">
 										TM Realty, LLC.
 									</Typography>
 									<Typography textAlign="right" color={theme.palette.info.main}>
@@ -233,12 +233,12 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 										<Typography fontWeight="bold">
 											Waitress
 										</Typography>
-										<Typography textAlign="right" color={theme.palette.info.main}>
+										<Typography color={theme.palette.info.main}>
 											June 2001 - December 2011
 										</Typography>
 									</Stack>
 									<Stack>
-										<Typography fontWeight="bold">
+										<Typography textAlign="right" fontWeight="bold">
 											The Cheesecake Factory Restaurants
 										</Typography>
 										<Typography textAlign="right" color={theme.palette.info.main}>
