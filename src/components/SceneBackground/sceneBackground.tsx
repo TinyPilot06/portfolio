@@ -2,7 +2,7 @@ import { FC, RefObject } from "react";
 import ThreeJs from "../scene/ThreeJs";
 import { Link, Outlet } from "react-router-dom";
 import './sceneBackground.scss';
-import { Button, Grid, Stack, useTheme } from "@mui/material";
+import { Button, Grid, Stack, } from "@mui/material";
 import MPLogo from "../mp-logo";
 import SocialIcon from "../socialIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

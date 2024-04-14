@@ -1,4 +1,4 @@
-import { CardContent, CardMedia, Stack, Typography, useTheme } from "@mui/material";
+import { CardContent, CardMedia, Stack, Typography } from "@mui/material";
 import Card from '@mui/material/Card';
 import loginPage from '../../assets/log-inPage.jpg';
 import portfolio from '../../assets/Portfolio.jpg';
