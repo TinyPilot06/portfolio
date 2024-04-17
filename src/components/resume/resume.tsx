@@ -2,16 +2,17 @@ import { CardMedia, Divider, Link, List, ListItem, ListItemIcon, ListItemText, P
 import profilePic from '../../assets/profilePic.jpg';
 import './resume.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { forwardRef } from 'react';
+import { FC, forwardRef } from 'react';
 
 type Props = {
 };
 
-const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
+//const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
+const Resume: FC<Props> = () => {
 	const theme = useTheme();
 
 	return (
-		<Stack direction='row' className="resume-main" ref={ref} spacing={2} mb={4} p={4} pt={16}>
+		<Stack direction='row' className="resume-main" /*ref={ref}*/ spacing={2} mb={4} p={4} pt={16}>
 			<Stack className='contact' sx={{ mt: '140px', ml: '70px' }}>
 				<Stack sx={{ m: '26px' }}>
 					<CardMedia
@@ -300,6 +301,6 @@ const Resume = forwardRef<HTMLDivElement, Props>((props, ref) => {
 			</Stack>
 		</Stack >
 	)
-});
+};
 
 export default Resume;

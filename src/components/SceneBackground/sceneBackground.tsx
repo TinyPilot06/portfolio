@@ -2,21 +2,35 @@ import { FC, RefObject } from "react";
 import ThreeJs from "../scene/ThreeJs";
 import { Link, Outlet } from "react-router-dom";
 import './sceneBackground.scss';
-import { Button, Grid, Stack, } from "@mui/material";
+import { Box, Button, Grid, Stack, } from "@mui/material";
 import MPLogo from "../mp-logo";
 import SocialIcon from "../socialIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import resumePdf from '../Resume.pdf';
+import { useScroll } from "../../contexts/scrollContext";
 
 type Props = {
-	scrollRef: RefObject<HTMLDivElement>;
+	// scrollRef: RefObject<HTMLDivElement>;
 };
 
-const SceneBackground: FC<Props> = ({ scrollRef }) => {
+const SceneBackground: FC<Props> = (/*{ scrollRef }*/) => {
+	const scroller = useScroll();
+
+	const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
+		const scrollableDiv = event.currentTarget;
+		const scrollTop = scrollableDiv.scrollTop;
+		const scrollHeight = scrollableDiv.scrollHeight - scrollableDiv.clientHeight;
+		const scrollPercent = scrollTop / scrollHeight;
+
+		// Update camera based on scrollPercent
+		// Pass this to your ThreeJS scene via context or directly if re-rendering occurs here
+		scroller.updateScrollPercent(scrollPercent);
+	};
 
 	return (
 		<>
-			<ThreeJs scrollRef={scrollRef} />
+			{/* <ThreeJs scrollRef={scrollRef} /> */}
+			<ThreeJs />
 			<div className="scroll-area">
 				<Grid container className="header" position="static">
 					<Grid item width="100%">
@@ -44,7 +58,9 @@ const SceneBackground: FC<Props> = ({ scrollRef }) => {
 						</Stack>
 					</Grid>
 				</Grid>
-				<Outlet />
+				<Box sx={{ height: '100%', overflowY: 'auto' }} onScroll={handleScroll}>
+					<Outlet />
+				</Box>
 			</div>
 		</>
 	);

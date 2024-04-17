@@ -1,28 +1,34 @@
-import { useRef, useEffect, FC, RefObject } from 'react';
+import { useRef, useEffect, FC, RefObject, useState } from 'react';
 import * as THREE from 'three';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
+import { useScroll } from '../../contexts/scrollContext';
 
 type Props = {
-	scrollRef: RefObject<HTMLDivElement>;
+	// scrollRef: RefObject<HTMLDivElement>;
 };
 
-const ThreeJs: FC<Props> = ({ scrollRef }) => {
+const ThreeJs: FC<Props> = (/*{ scrollRef }*/) => {
+	const cameraMoveRange = 1.35;
+	const cameraStartHeight = 0;
+
 	const mountRef = useRef<HTMLDivElement>(null);
+	const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
+
+	const { scrollPercent } = useScroll();
 
 	useEffect(() => {
 		const scene = new THREE.Scene();
 		// scene.fog = new THREE.FogExp2(0xffccff, 0.060);
 		const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 10000);
-		const cameraMoveRange = 1.35;
-		const cameraStartHeight = 0;
 
 		//Position and rotation setup
 		camera.position.z = 13;
 		camera.position.x = -1.35;
 		camera.position.y = cameraStartHeight;
 		camera.rotation.set(0.225, 0, 0);
+		cameraRef.current = camera;
 
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
 		renderer.setClearColor("#0f3f4b");
@@ -229,22 +235,22 @@ const ThreeJs: FC<Props> = ({ scrollRef }) => {
 
 		render();
 
-		const element = scrollRef.current;
+		// const element = scrollRef.current;
 
-		if (element) {
-			const articleHeight = element.getBoundingClientRect().height;
-			const pageHeight =
-				element.children[0].getBoundingClientRect().height - articleHeight;
+		// if (element) {
+		// const articleHeight = element.getBoundingClientRect().height;
+		// const pageHeight =
+		// 	element.children[0].getBoundingClientRect().height - articleHeight;
 
-			element.addEventListener("scroll", function () {
-				const scrollTop = element.scrollTop;
-				const scrollPercent = scrollTop / pageHeight;
-
-				camera.position.y = cameraStartHeight - cameraMoveRange * scrollPercent;
-			});
-		}
+		// element.addEventListener("scroll", function () {
+		// const scrollTop = element.scrollTop;
+		// const scrollPercent = scrollTop / pageHeight;
+		// });
+		// }
 
 		function render() {
+			//console.log(scrollPos);
+
 			requestAnimationFrame(render);
 
 			sm_cube1.rotation.y += 0.003;
@@ -265,7 +271,6 @@ const ThreeJs: FC<Props> = ({ scrollRef }) => {
 			light4.position.copy(light4Pos);
 			sm_sphere4.position.copy(light4Pos);
 
-
 			composer.render();
 		}
 
@@ -274,6 +279,12 @@ const ThreeJs: FC<Props> = ({ scrollRef }) => {
 			mountRef.current?.removeChild(renderer.domElement);
 		};
 	}, []);
+
+	useEffect(() => {
+		if (cameraRef.current) {
+			cameraRef.current.position.y = cameraStartHeight - cameraMoveRange * scrollPercent;
+		}
+	}, [scrollPercent])
 
 	return <div ref={mountRef} />;
 };
