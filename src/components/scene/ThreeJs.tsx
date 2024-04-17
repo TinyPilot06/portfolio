@@ -1,15 +1,14 @@
-import { useRef, useEffect, FC, RefObject, useState } from 'react';
-import * as THREE from 'three';
+import { useRef, useEffect, FC } from 'react';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 import { useScroll } from '../../contexts/scrollContext';
+import * as THREE from 'three';
 
 type Props = {
-	// scrollRef: RefObject<HTMLDivElement>;
 };
 
-const ThreeJs: FC<Props> = (/*{ scrollRef }*/) => {
+const ThreeJs: FC<Props> = () => {
 	const cameraMoveRange = 1.35;
 	const cameraStartHeight = 0;
 
@@ -20,6 +19,7 @@ const ThreeJs: FC<Props> = (/*{ scrollRef }*/) => {
 
 	useEffect(() => {
 		const scene = new THREE.Scene();
+		const currentMountRef = mountRef.current;
 		// scene.fog = new THREE.FogExp2(0xffccff, 0.060);
 		const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 10000);
 
@@ -235,22 +235,7 @@ const ThreeJs: FC<Props> = (/*{ scrollRef }*/) => {
 
 		render();
 
-		// const element = scrollRef.current;
-
-		// if (element) {
-		// const articleHeight = element.getBoundingClientRect().height;
-		// const pageHeight =
-		// 	element.children[0].getBoundingClientRect().height - articleHeight;
-
-		// element.addEventListener("scroll", function () {
-		// const scrollTop = element.scrollTop;
-		// const scrollPercent = scrollTop / pageHeight;
-		// });
-		// }
-
 		function render() {
-			//console.log(scrollPos);
-
 			requestAnimationFrame(render);
 
 			sm_cube1.rotation.y += 0.003;
@@ -276,7 +261,7 @@ const ThreeJs: FC<Props> = (/*{ scrollRef }*/) => {
 
 		return () => {
 			window.removeEventListener('resize', handleResize);
-			mountRef.current?.removeChild(renderer.domElement);
+			currentMountRef?.removeChild(renderer.domElement);
 		};
 	}, []);
 

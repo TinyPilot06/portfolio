@@ -1,4 +1,4 @@
-import { FC, RefObject } from "react";
+import { FC } from "react";
 import ThreeJs from "../scene/ThreeJs";
 import { Link, Outlet } from "react-router-dom";
 import './sceneBackground.scss';
@@ -10,10 +10,9 @@ import resumePdf from '../Resume.pdf';
 import { useScroll } from "../../contexts/scrollContext";
 
 type Props = {
-	// scrollRef: RefObject<HTMLDivElement>;
 };
 
-const SceneBackground: FC<Props> = (/*{ scrollRef }*/) => {
+const SceneBackground: FC<Props> = () => {
 	const scroller = useScroll();
 
 	const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
@@ -29,7 +28,6 @@ const SceneBackground: FC<Props> = (/*{ scrollRef }*/) => {
 
 	return (
 		<>
-			{/* <ThreeJs scrollRef={scrollRef} /> */}
 			<ThreeJs />
 			<div className="scroll-area">
 				<Grid container className="header" position="static">

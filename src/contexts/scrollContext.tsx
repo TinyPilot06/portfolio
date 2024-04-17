@@ -22,7 +22,6 @@ export const ScrollProvider: FC<{ children: ReactNode }> = ({ children }) => {
 	const [scrollPercent, setScrollPercent] = useState<number>(0);
 
 	const updateScrollPercent = (newScrollPercent: number) => {
-		// console.log(newScrollPercent);
 		setScrollPercent(newScrollPercent);
 	};
 

@@ -4,16 +4,14 @@ import Greeting from "../greeting"
 import AboutMe from "../aboutme";
 import Projects from "../projects/projects";
 import ContactForm from "../ContactForm";
-import { FC, forwardRef } from "react";
+import { FC } from "react";
 import Experience from "../experience";
 
 type Props = {
 };
 
-//const HomePage = forwardRef<HTMLDivElement, Props>((props, ref) => {
 const HomePage: FC<Props> = () => {
 	return (
-		// <div className="homepage" ref={ref}>
 		<div className="homepage">
 			<Grid container>
 				<Grid item className="components" xs={12} sm={6} m={8} lg={6} xl={6}>

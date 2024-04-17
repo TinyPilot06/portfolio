@@ -12,16 +12,15 @@ import { ScrollProvider } from './contexts/scrollContext';
 
 function App() {
 	setupIcons();
-	const scrollRef = useRef<HTMLDivElement>(null);
 
 	return (
 		<ThemeProvider theme={DarkTheme}>
 			<ScrollProvider>
 				<Router>
 					<Routes>
-						<Route path="/" element={<SceneBackground /*scrollRef={scrollRef}*/ />}>
-							<Route index element={<HomePage /*ref={scrollRef}*/ />} />
-							<Route path="/resume" element={<Resume /*ref={scrollRef}*/ />} />
+						<Route path="/" element={<SceneBackground />}>
+							<Route index element={<HomePage />} />
+							<Route path="/resume" element={<Resume />} />
 						</Route>
 					</Routes>
 				</Router>

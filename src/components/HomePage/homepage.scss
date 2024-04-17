@@ -1,44 +1,8 @@
 @import '../../styles/variables.scss';
 
 .homepage {
-	// position: absolute;
-	// top: 0;
-	// right: 0;
-	// bottom: 0;
-	// left: 0;
-	// overflow-y: auto;
-
-	// .main-content {
-	// 	padding-top: 82px;
-	// 	display: grid;
-	// 	// grid-template-columns: 50% 50%;
-	// 	grid-template-rows: 1fr;
-	// 	grid-template-areas: "content negative";
-	// }
-
 	.components {
-		// display: grid;
-		// grid-template-columns: 50%;
 		margin-top: 250px;
 		margin-bottom: 60px;
 	}
-
-	// @media only screen and (max-width: 1200px) {
-	// 	.content-container {
-	// 		grid-template-columns: 50% 50%;
-	// 	}
-	// }
-
-	// @media only screen and (max-width: 900px) {
-	// 	.content-container {
-	// 		grid-template-columns: 75% 25%;
-	// 	}
-	// }
-
-	// @media only screen and (max-width: 600px) {
-	// 	.content-container {
-	// 		grid-template-columns: 100%;
-	// 	}
-	// }
-
 }

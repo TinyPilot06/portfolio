@@ -1,35 +1,6 @@
 .resume-main {
-	// position: absolute;
-	// top: 0;
-	// right: 0;
-	// bottom: 0;
-	// left: 0;
-	// display: grid;
-	// grid-template-columns: 375px auto;
-	// grid-template-rows: 220px auto;
-	// grid-template-areas:
-	// 	'contact  header'
-	// 	'contact main-content';
-	background-color: transparent; // #203e48;
+	background-color: transparent;
 	overflow-y: auto;
-
-	// @media only screen and (max-width: 1200px) {
-	// 	.resume-main {
-	// 		grid-template-columns: 65% 35%;
-	// 	}
-	// }
-
-	// @media only screen and (max-width: 900px) {
-	// 	.resume-main {
-	// 		grid-template-columns: 75% 25%;
-	// 	}
-	// }
-
-	// @media only screen and (max-width: 600px) {
-	// 	.resume-main {
-	// 		grid-template-columns: 100% 0;
-	// 	}
-	// }
 
 	.contact-info {
 		background-color: #225969;
@@ -39,7 +10,6 @@
 		text-align: center;
 		border-radius: 16px;
 		border: 1px solid rgba(white, 0.5);
-
 	}
 
 	.main-content {
