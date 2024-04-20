@@ -19,7 +19,7 @@ const Projects = () => {
 				/>
 				<CardContent>
 					<Stack spacing={2}>
-						<Typography>Music library management web application (Full Stack)</Typography>
+						<Typography>Music Library Management Web Application (Full Stack)</Typography>
 						<Stack>
 							<Typography variant="body1">REACT  TYPESCRIPT  MATERIAL UI</Typography>
 							<Typography variant="body1">AWS  LAMBDA  S3  COGNITO  DYNAMODB</Typography>

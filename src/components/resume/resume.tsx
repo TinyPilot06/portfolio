@@ -95,10 +95,10 @@ const Resume: FC<Props> = () => {
 					<Typography variant="h5">OBJECTIVE</Typography>
 					<Paper elevation={0}>
 						<Typography m="10px" p="20px">
-							Motivated and dependable professional transitioning from the service and gaming industry to the technology sector,
-							with a foundational knowledge in web & mobile development and a passion for technology and innovation. Eager to apply my problem-solving skills,
-							adaptability, and commitment to learning in a full-stack developer role. I bring a unique perspective from extensive service industry experience,
-							including working under pressure, excellent communication, and a demonstrably strong work ethic.
+							Motivated and dependable professional transitioning from a successful career in the gaming industry to software development.
+							With a foundational knowledge in web & mobile development and a passion for technology and innovation,
+							I am eager to apply my skills and grow professionally under expert guidance.
+							I aim to contribute effectively to my future team and to continually strive to become an expert in the field.
 						</Typography>
 					</Paper>
 				</Stack>
@@ -111,9 +111,11 @@ const Resume: FC<Props> = () => {
 								<Stack spacing={3}>
 									<ListItem>
 										<Stack>
-											<Typography>Music Library WebApp</Typography>
-											<Typography>
+											<Typography variant='h6'>Music Library Management WebApp</Typography>
+											<Typography color={theme.palette.info.main}>
 												React, TypeScript, Material UI, Node.js, Cognito, Lambda, DynamoDB, S3 <br />
+											</Typography>
+											<Typography>
 												Developed a full-featured music library management application from scratch,
 												focusing on serverless architecture with AWS Lambda functions and DynamoDB for data management.
 												Front end built in React using Material UI v5. <br />
@@ -123,15 +125,16 @@ const Resume: FC<Props> = () => {
 									<Divider variant="middle" />
 									<ListItem>
 										<Stack>
-											<Typography>Command Line BlackJack</Typography>
-											<Typography>Phyton</Typography>
+											<Typography variant='h6'>Command Line BlackJack</Typography>
+											<Typography color={theme.palette.info.main}>Phyton</Typography>
 											<Typography>Created a command line-based Blackjack game with full Blackjack rules logic and ASCII graphipcs.</Typography>
 										</Stack>
 									</ListItem>
 									<Divider variant="middle" />
 									<ListItem>
 										<Stack>
-											<Typography>NuCamp Bootcamp < br />
+											<Typography variant='h6'>NuCamp Bootcamp</Typography>
+											<Typography color={theme.palette.info.main}>
 												HTML, CSS, Javascript, SQL, REACT, ReactNative, AWS/AZURE DevOps
 											</Typography>
 											<Typography>Participated in numerous projects, covering website and web app design & development, database development
@@ -148,6 +151,48 @@ const Resume: FC<Props> = () => {
 				<Stack spacing={3}>
 					<Typography variant="h5">PROFESSIONAL EXPERIENCE</Typography>
 					<Stack spacing={6}>
+						<Stack spacing={3}>
+							<Stack direction="row" width="100%" justifyContent="space-between" spacing={4}>
+								<Stack>
+									<Typography fontWeight="bold">
+										Freelance Software Developer
+									</Typography>
+									<Typography color={theme.palette.info.main}>
+										May 2023 - Present
+									</Typography>
+								</Stack>
+								<Stack>
+									<Typography textAlign="right" fontWeight="bold">
+										Remote
+									</Typography>
+								</Stack>
+							</Stack>
+							<Paper elevation={0}>
+								<List>
+									<ListItem>
+										<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+										<ListItemText>Frontend Development - Design and build user interfaces with React and Typescript,
+											incorporating Material UI v5 for responsive, intuitive, user-friendly experiences.</ListItemText>
+									</ListItem>
+									<ListItem>
+										<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+										<ListItemText>Backend Development - Utilize serverless AWS Lambda functions to ensure scalability, cost effectiveness, and seamless deployment.
+											Configure and use AWS S3 for scalable secure storage. Design and utilize DynamoDB No-SQL database architecture for high-performance data retrieval.</ListItemText>
+									</ListItem>
+									<ListItem>
+										<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+										<ListItemText>Authentication and Security - Integrate AWS Cognito for secure user authentication and authorization,
+											ensuring data privacy and protected access to backend APIs.</ListItemText>
+									</ListItem>
+									<ListItem>
+										<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+										<ListItemText>Stakeholder Communication - Maintain consistent communication and feedback sessions with clients and stakeholders to ensure smooth evolution of software designs,
+											functionality, and delivery expectations.</ListItemText>
+									</ListItem>
+								</List>
+							</Paper>
+						</Stack>
+						<Divider variant='middle' />
 						<Stack spacing={3}>
 							<Stack direction="row" width="100%" justifyContent="space-between" spacing={4}>
 								<Stack>
@@ -259,46 +304,73 @@ const Resume: FC<Props> = () => {
 							</Stack>
 						</Stack>
 					</Stack>
+					<Divider variant='middle' />
+					<Stack spacing={3}>
+						<Typography variant="h5">SOFT SKILLS</Typography>
+						<Paper elevation={0}>
+							<List>
+								<ListItem>
+									<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+									<ListItemText>
+										Demonstrably strong work ethic and company loyalty.
+									</ListItemText>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+									<ListItemText>
+										Excellent communication and interpersonal skills honed in high-pressure service environments.
+									</ListItemText>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+									<ListItemText>
+										Adaptability and eagerness to learn and apply new technologies.
+									</ListItemText>
+								</ListItem>
+							</List>
+						</Paper>
+					</Stack>
+					<Divider variant='middle' />
+					<Stack spacing={3}>
+						<Typography variant="h5">EDUCATION, CERTIFICATIONS & COURSES</Typography>
+						<Paper elevation={0}>
+							<List>
+								<ListItem>
+									<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+									<ListItemText>
+										Web Development Fundamentals, nuCamp
+									</ListItemText>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+									<ListItemText>
+										Backend, SQL, and DevOps with Python, nuCamp
+									</ListItemText>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
+									<ListItemText>
+										Front End and Mobile Development, nuCamp
+									</ListItemText>
+								</ListItem>
+							</List>
+						</Paper>
+					</Stack>
+
+					<Divider variant='middle' />
+					<Stack spacing={3}>
+						<Typography variant="h5">ACTIVITIES AND INTERESTS</Typography>
+						<Paper elevation={0}>
+							<Typography m="10px" p="20px">
+								Continuously engaging in self-directed learning through online resources, focusing on web design, user experience, and modern web technologies like AWS, React, and Three.js.
+								<br />
+								When I'm not coding, I like to build with Lego, play video games, root for the Ravens, and go to the gym.
+							</Typography>
+						</Paper>
+					</Stack>
 				</Stack>
-				<Divider variant='middle' />
-				<Stack spacing={3}>
-					<Typography variant="h5">SOFT SKILLS</Typography>
-					<Paper elevation={0}>
-						<List>
-							<ListItem>
-								<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
-								<ListItemText>
-									Demonstrably strong work ethic and company loyalty.
-								</ListItemText>
-							</ListItem>
-							<ListItem>
-								<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
-								<ListItemText>
-									Excellent communication and interpersonal skills honed in high-pressure service environments.
-								</ListItemText>
-							</ListItem>
-							<ListItem>
-								<ListItemIcon><FontAwesomeIcon icon="caret-right" /></ListItemIcon>
-								<ListItemText>
-									Adaptability and eagerness to learn and apply new technologies.
-								</ListItemText>
-							</ListItem>
-						</List>
-					</Paper>
-				</Stack>
-				<Divider variant='middle' />
-				<Stack spacing={3}>
-					<Typography variant="h5">ACTIVITIES AND INTERESTS</Typography>
-					<Paper elevation={0}>
-						<Typography m="10px" p="20px">
-							Continuously engaging in self-directed learning through online resources, focusing on web design, user experience, and modern web technologies like AWS, React, and Three.js.
-							<br />
-							When I'm not coding, I like to build with Lego, play video games, root for the Ravens, and go to the gym.
-						</Typography>
-					</Paper>
-				</Stack>
-			</Stack>
-		</Stack >
+			</Stack >
+		</Stack>
 	)
 };
 
