@@ -125,9 +125,9 @@ const Resume: FC<Props> = () => {
 									<Divider variant="middle" />
 									<ListItem>
 										<Stack>
-											<Typography variant='h6'>Command Line BlackJack</Typography>
-											<Typography color={theme.palette.info.main}>Phyton</Typography>
-											<Typography>Created a command line-based Blackjack game with full Blackjack rules logic and ASCII graphipcs.</Typography>
+											<Typography variant='h6'>Portfolio Website</Typography>
+											<Typography color={theme.palette.info.main}>React, Typescript, Material UI v5, ThreeJs</Typography>
+											<Typography>Built a single-page application (SPA) portfolio website to promote myself, my work experience, education, and resume..</Typography>
 										</Stack>
 									</ListItem>
 									<Divider variant="middle" />
