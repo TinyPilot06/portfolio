@@ -1,5 +1,5 @@
 import { Button, IconButton, Stack, Tooltip, Typography, Zoom } from "@mui/material";
-import resumePdf from './Resume.pdf';
+import resumePdf from '../assets/MichellePolanResume.pdf';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
 

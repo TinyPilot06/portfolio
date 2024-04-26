@@ -6,7 +6,7 @@ import { Box, Button, Grid, Stack, } from "@mui/material";
 import MPLogo from "../mp-logo";
 import SocialIcon from "../socialIcon";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import resumePdf from '../Resume.pdf';
+import resumePdf from '../../assets/MichellePolanResume.pdf';
 import { useScroll } from "../../contexts/scrollContext";
 
 type Props = {
