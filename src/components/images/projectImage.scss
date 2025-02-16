@@ -1,0 +1,31 @@
+
+.project-image-container {
+	height: min-content;
+	border: white 1px solid;
+	border-radius: 16px;
+
+	.project-image-container.open {
+		position: fixed;
+		z-index: 1000001;
+		overflow: hidden;
+		padding: 40px 0;
+	}
+
+	.project-image {
+		width: 100%;
+		height: auto;
+		border-radius: 16px;
+	}
+
+	.project-image-caption {
+		max-height: 0;
+		padding: 0 32px;
+		overflow: hidden;
+		transition: max-height 0.5s ease, padding 0.5s ease;
+
+		&.focused {
+			max-height: 200px;
+			padding: 24px 32px;
+		}
+	}
+}

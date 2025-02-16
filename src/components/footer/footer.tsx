@@ -1,6 +1,5 @@
 import { Box, Button, Stack } from "@mui/material"
 import './footer.scss';
-import SocialIcon from "../socialIcon";
 
 
 const Footer = () => {
@@ -15,5 +14,4 @@ const Footer = () => {
 		</Stack>
 	)
 };
-
 export default Footer;

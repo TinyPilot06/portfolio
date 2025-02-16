@@ -2,7 +2,7 @@ import { Grid } from "@mui/material"
 import './homepage.scss';
 import Greeting from "../greeting"
 import AboutMe from "../aboutme";
-import Projects from "../projects/projects";
+import Projects from "../projects";
 import ContactForm from "../ContactForm";
 import { FC } from "react";
 import Experience from "../experience";

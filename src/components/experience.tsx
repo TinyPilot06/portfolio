@@ -3,7 +3,7 @@ import { Stack, Typography } from "@mui/material";
 const Experience = () => {
 	return (
 		<Stack className="content-container">
-			<Typography className="experience" variant="h4">EXPERIENCE</Typography>
+			<Typography variant="h4">EXPERIENCE</Typography>
 			<Typography className="text-box" variant="body1">
 				I have participated in numerous projects, covering website and web app design & development, database development,
 				Python scripting, DevOps in both the AWS and Azure environments, mobile app development,

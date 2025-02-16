@@ -23,7 +23,7 @@
 		"@types/react": "^18.2.55",
 		"@types/react-dom": "^18.2.19",
 		"fontawesome": "^5.6.3",
-		"framer-motion": "^11.0.20",
+		"framer-motion": "^11.18.2",
 		"maath": "^0.10.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",

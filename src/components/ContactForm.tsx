@@ -4,7 +4,6 @@ import '../components/contactform.scss';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-
 interface ContactFormFields {
 	name: string,
 	email: string,
@@ -47,7 +46,6 @@ const ContactForm = () => {
 	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = event.target;
 		setFormFields({ ...formFields, [name]: value });
-
 	};
 
 	return (
@@ -90,4 +88,5 @@ const ContactForm = () => {
 		</form>
 	)
 };
+
 export default ContactForm;
